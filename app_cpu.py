@@ -13,7 +13,7 @@ except FileNotFoundError:
     st.error("❌ Model file not found. Please upload 'linear_regression_model.pkl' to the GitHub repo.")
 
 # Streamlit UI
-st.write("🔍 SYN Attack CPU Usage Predictor")
+st.write("SYN Attack CPU Usage Predictor")
 st.write("Adjust the sliders to predict CPU usage based on SYN attack parameters.")
 
 # User Inputs via Sidebar
