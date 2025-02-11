@@ -26,6 +26,10 @@ input_features = pd.DataFrame([[incoming_syn_rate, network_traffic]], columns=['
 # Predict CPU usage
 if 'model' in locals():
     predicted_cpu_usage = model.predict(input_features)[0]
+    
+    # Ensure the prediction stays between 0 and 100
+    predicted_cpu_usage = max(0, min(100, predicted_cpu_usage))  # Method 1 (Using max/min)
+    
     st.subheader("🖥️ Predicted CPU Usage")
     st.subheader(f"**{predicted_cpu_usage:.2f}%**")
 else:
