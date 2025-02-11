@@ -37,5 +37,5 @@ else:
 
 # Footer
 st.markdown("Developed for SYN Attack Analysis in a controlled environment. 🚀 ")
-st.markdown("In the real world, many more factors should be considered, such as active connections, process count, physical hardware, and user activity etc.")
+
 
